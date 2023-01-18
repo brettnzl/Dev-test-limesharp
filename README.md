@@ -25,6 +25,27 @@ reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 ```
 Your solution:
 
+function reformat(content) {
+    //define vowels
+    let vowels = "aeiou"
+
+    //make string lowercase 
+    let lowercaseContent = content.toLowerCase();
+
+    //replace vowels with nothing ''
+    let removedVowels = lowercaseContent.slice(0, 1) + lowercaseContent.slice(1).replace(/[aeiou]/gi, '');
+
+    // not sure if you mean't just first letter, or each first letter so I did both
+    return removedVowels.charAt(0).toUpperCase() + removedVowels.slice(1);
+
+    //Or for multiple
+    //return removedVowels.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+test = reformat("liMeSHArp DeveLoper TEST");
+
+console.log(test);
+
 ###### If we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
 
 

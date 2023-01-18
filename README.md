@@ -11,6 +11,11 @@ repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 ```
 Your solution:
 
+function repeat(arr) {
+    return arr.concat(arr, arr);
+}
+console.log(repeat[1,2,3]);
+
 ###### If we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
 
 ### Task 2:

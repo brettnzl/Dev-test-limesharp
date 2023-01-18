@@ -11,10 +11,12 @@ repeat([1,2,3]) //[1,2,3,1,2,3,1,2,3]
 ```
 Your solution:
 
+```
 function repeat(arr) {
     return arr.concat(arr, arr);
 }
 console.log(repeat[1,2,3]);
+```
 
 ###### If we type in our console your function and repeat([1,2,3]) then the result should be [1,2,3,1,2,3,1,2,3] 
 
@@ -25,6 +27,7 @@ reformat("liMeSHArp DeveLoper TEST") //Lmshrp dvlpr tst
 ```
 Your solution:
 
+```
 function reformat(content) {
     //define vowels
     let vowels = "aeiou"
@@ -45,6 +48,7 @@ function reformat(content) {
 test = reformat("liMeSHArp DeveLoper TEST");
 
 console.log(test);
+```
 
 ###### If we type in our console your function and reformat("liMeSHArp DeveLoper TEST") then the result should be Lmshrp dvlpr tst
 
@@ -63,6 +67,7 @@ next_binary_number([1,0]) // [1,1]
 ```
 Your solution:
 
+```
 function next_binary_number(numbers) {
 
     //loop through from back of numbers
@@ -87,6 +92,7 @@ function next_binary_number(numbers) {
 test = next_binary_number([1,0,0,0,0,0,0,0,0,1]);
 
 console.log(test);
+```
 
 ###### If we type in our console your function and next_binary_number([1,0,0,0,0,0,0,0,0,1]) then the result should look like 1,0,0,0,0,0,0,0,1,0 (or as an array).
 
